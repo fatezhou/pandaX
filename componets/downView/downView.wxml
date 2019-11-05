@@ -1,0 +1,36 @@
+<!--componets/downView/downView.wxml-->
+<view class="base">
+  <view class="top">
+    <text class="date">{{date}}</text>
+    <view class="expand-view" bindtap="onTapExpand">
+      <view class="expand-line"></view>
+      <view class='{{expand?"expand iconfont icon-arrow-down":"expand iconfont icon-arrow-up"}}' ></view>
+    </view>
+  </view>
+  <view class="middle">
+    <view class="left">
+      <text class="title">{{title}}</text>
+      <text class="text">{{showAll?fullText:littleText}}</text>
+    </view>
+    <view class="right">
+      <view hidden="{{expand}}" class="little">
+        <view class="ring-unit">
+          <view class="line-h"></view>
+          <text class="ring-text">平均</text>
+          <ring id="ring-avg" class="ring"></ring>
+        </view>
+      </view>
+      <view hidden="{{!expand}}" class="large">
+        <view class="large-right">
+          <view class="ring-unit" wx:for="{{integrations}}">
+            <view class="line-h"></view>
+            <text class="ring-text">{{item.name}}</text>
+            <ring class="ring" id='{{"ring" + item.id}}'></ring>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <view class="line"></view>
+</view>

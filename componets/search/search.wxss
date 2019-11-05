@@ -1,0 +1,48 @@
+/* componets/search.wxss */
+.base {
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  padding-left: 30rpx;
+  height: 80rpx;
+}
+
+.icon{
+  margin-left: 30rpx
+}
+
+.search{
+  color: gray;
+  align-items: center;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border: 2px solid gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row
+}
+
+.history{
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.history-item{
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+  background-color: gray;
+  color:white;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border-radius: 25px;
+}
+
+.hide{
+  display: none
+}

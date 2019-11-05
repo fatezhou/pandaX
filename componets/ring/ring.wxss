@@ -1,0 +1,24 @@
+/* componets/ring/ring.wxss */
+.circle_box,.circle_draw{ position: relative; }
+.circle_bg{position: absolute;}
+.circle_info{
+  position: absolute; 
+  width: 100%;
+  left: 50%;
+  top: 50%; 
+  transform: translate(-50%,-50%); 
+  display: flex;  
+  align-items: center;
+  justify-content: center
+}
+.circle_dot{
+  width:16rpx;
+  height: 16rpx;  
+  border-radius: 50%;
+  background-color: #fb9126;
+} 
+.circle_txt{
+  color: "balck";
+  font-size: 36rpx; 
+  letter-spacing: 2rpx;
+}

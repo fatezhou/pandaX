@@ -1,0 +1,11 @@
+<!--componets/search.wxml-->
+<view class="base">
+  <view class="search">
+    <icon class="icon" type="search"></icon>
+    <input class="input" placeholder="search" bindinput="onInput" bindconfirm="onConfirm" bindfocus="onFocus" bindblur="onLostFocus" value="{{fixText}}"></input>
+  </view>
+  <view class="history">
+    <text class="{{hideHistory?'hide':'history-item'}}" wx:for="{{history}}" wx:key="key" bindtap="onTapHistory" data-item="{{item}}">{{item}}</text>
+  </view>
+</view>
+

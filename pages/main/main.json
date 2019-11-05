@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search":"/componets/search/search",
+    "listDown":"/componets/listDown/listDown",
+    "ring":"/componets/ring/ring",
+    "downView":"/componets/downView/downView"
+  }
+}

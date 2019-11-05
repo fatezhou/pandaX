@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Panda-X",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "position":"top",
+    "list": [
+      {
+        "text": "logs",
+        "pagePath": "pages/main/main"
+      },
+      {
+        "text": "students",
+        "pagePath": "pages/main/main"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 15000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json",
+  "debug": true
+}

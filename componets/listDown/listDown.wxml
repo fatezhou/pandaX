@@ -1,0 +1,7 @@
+<!--componets/listDown/listDown.wxml-->
+<scroll-view scroll-y="true" class="base">
+  <view class="list-view" wx:for="{{row}}" wx:key="key">
+    <icon type="search" class="list-icon"></icon>
+    <text class="list-item" data-item="{{item}}" bindtap="onTapItem">{{item}}</text>
+  </view>
+</scroll-view>

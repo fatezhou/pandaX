@@ -1,0 +1,17 @@
+<!--pages/main/main.wxml-->
+<view class="base">
+  <view style="margin-top:30rpx"></view>
+  <view hidden="{{hideSearchPage}}">
+    <search id="search" bind:onSearchInput="onSearchInput" bind:onClickHistoryItem="onSearchClickHistoryItem" bind:onConfirm="onSearchConfirm"></search>
+    <view hidden="{{hiddenListDown}}">
+      <listDown id="listDown" bind:onListDownTapItem="onListDownTapItem"></listDown>
+    </view>
+  </view>
+  <!--ring id="ring"
+    bg="bg" draw="draw">
+  </ring-->
+  <!--text class="iconfont icon-arrow-up">xx</text-->
+  <downView id="downView">
+  
+  </downView>
+</view>

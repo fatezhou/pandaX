@@ -1,0 +1,24 @@
+/* componets/listDown/listDown.wxss */
+.base{
+  display: flex;
+  flex-direction: column;
+}
+
+.list-view{
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom:3rpx solid grey;
+  height: 80rpx;
+  align-items: center;
+}
+
+.list-icon{
+  margin-left: 30rpx
+}
+
+.list-item{
+  padding-left: 30rpx;
+  width: 100vh
+}
